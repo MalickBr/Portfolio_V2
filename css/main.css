@@ -566,3 +566,121 @@ section{
 .projets-box .navigation .arrow-right{
     margin-left: 1.5rem;
 }
+
+
+
+
+
+.contact-container{
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 5rem;
+}
+
+.contact-container .contact-infos:first-child{
+  align-self: center;
+}
+
+.headingcont{
+  color: var(--white-color);
+  text-align: center;
+  font-size: 4.7rem;
+  margin-bottom: 1.3rem;
+} 
+
+.headingcont span{ 
+  color: var(--main-color);
+}
+
+.contact-infos p{
+  color: var(--white-color); 
+  text-align: left; 
+
+}
+
+.contact-detail .detail p{
+    color: var(--white-color);
+    text-align: left;
+    margin-bottom: .5rem;
+    font-size: 1.6rem;
+}
+
+.contact-infos .desc{
+  margin: 1.5rem 0 2.5rem;
+}
+
+.contact-detail{
+  display: flex;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.contact-detail i{
+  display: inline-flex;
+  color: var(--main-color);
+  background-color: var(--second-bg-color);
+  padding: 1.2rem;
+  border-radius: 1rem;
+  font-size: 2.7rem;
+  margin-right: 1.5rem;
+}
+
+.contact-detail .detail p:first-child{
+  color: var(--main-color);
+  margin-top: .6rem;
+}
+
+
+.contact-form{
+  text-align: center;
+  align-items: center;
+  background-color: var(--second-bg-color);
+  border-radius: 1rem;
+}
+
+.field-box{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  margin: 2rem;
+}
+
+.heading-form{
+  color: var(--main-color);
+  font-size: 3.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.heading-form span{ 
+  color: var(--white-color); 
+}
+
+
+.field-box input{
+  background-color: var(--bg-color);
+  padding: 1rem;
+  width: 100%;
+  border-radius: 1rem;
+  color: var(--white-color);
+}
+
+.field-box textarea{ 
+  background-color: var(--bg-color); 
+  padding: 1rem; 
+  width: 100%; 
+  height: 10rem; 
+  border-radius: 1rem; 
+  resize: none;
+  color: var(--white-color);
+} 
+
+  .contact-form .btn{
+    cursor: pointer;
+  }
+  
+.field-box input:focus,
+.field-box textarea:focus{ 
+  border: .2rem solid var(--main-color); 
+}
