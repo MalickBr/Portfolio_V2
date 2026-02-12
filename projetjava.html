@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/main_projetjava.css">
+    <title>MALICK BRYAN PORTFOLIO</title>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">Bryan.</a>
+
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+        <nav>
+            <ul lang="en">
+                <li><a href="index.html">Acceuil</a></li>
+                <li><a href="#">A propos</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Realisations</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="intro">
+        <h1>🖥️Presentation Projet Java <span>– Gestion des employés d’une ligue</span></h1>
+        <h2>🧩 Contexte du projet</h2>
+        <p>Ce projet a été réalisé dans le cadre de ma formation BTS SIO, avec pour objectif de concevoir une application Java orientée objet permettant de gérer les employés d’une ou plusieurs ligues sportives.
+            L’application fonctionne en mode console, mais repose sur une architecture solide et professionnelle, proche de ce que l’on retrouve dans des applications métiers réelles.</p>
+    </section>
+
+    <section class="objectifs">
+        <h2 class="heading">🎯 Objectifs du projet</h2>
+
+        <div class="objectifs-container">
+            <div class="objectifs-box">
+                <i class="fa-solid fa-building-user"></i>
+
+                <h3>Gérer des employés rattachés à des ligues</h3>
+                <p>L’un des objectifs principaux du projet est de modéliser une relation claire entre les employés et les ligues auxquelles ils appartiennent.
+                </p>
+            </div>
+
+
+            <div class="objectifs-box">
+                <i class="fa-solid fa-scale-balanced"></i>
+
+                <h3>Mettre en place des règles métier strictes</h3>
+                <p>Le projet intègre volontairement des règles métier fortes, directement dans les classes Java, afin d’éviter toute incohérence fonctionnelle.</p>
+            </div>
+
+
+            <div class="objectifs-box">
+                <i class="fa-solid fa-database"></i>
+
+                <h3>Garantir la cohérence des données (dates, droits, rôles)</h3>
+                <p>La cohérence des données est assurée à plusieurs niveaux du projet.
+                    Par exemple, les dates d’embauche et de fin de contrat sont vérifiées pour éviter les incohérences.
+                </p>
+            </div>
+
+
+            <div class="objectifs-box">
+                <i class="fa-solid fa-book-open"></i>
+
+                <h3>Sécuriser les saisies utilisateurs</h3>
+                <p>L’application étant en mode console, une attention particulière a été portée à la sécurisation des entrées utilisateur.</p>
+            </div>
+
+            
+        </div>
+    </section>
+
+    <section class="architecture">
+        <h2 class="heading">🏗️ Architecture générale</h2>
+        <p>📁 Organisation orientée objet :</p>
+        <ul>
+            <li><span>Employe</span> : représente un employé </li><br>
+            <li><span>Ligue</span> : regroupe les employés</li><br>
+            <li><span>GestionPersonnel</span> : gestion globale des ligues et employés</li><br>
+            <li><span>Console</span> : interface utilisateur en ligne de commande</li><br>
+        </ul>
+
+        <h2 class="heading">👤 Gestion des employés</h2>
+        <p>Chaque employé possède :</p>
+
+        <ul>
+            <li>🧑Nom et prénom</li><br>
+            <li>📧Adresse mail</li><br>
+            <li>🔐 Mot de passe</li><br>
+            <li>🏟️ Ligue de rattachement</li><br>
+            <li>📅 Date d’arrivée</li><br>
+            <li>📅 Date de départ</li><br>
+        </ul>
+
+        <h2 class="heading">📅 Gestion des dates (choix techniques)</h2>
+        <p>✅ Utilisation de LocalDate / Pourquoi LocalDate ?</p>
+
+        <ul>
+            <li>Pas de gestion d’heures inutiles</li><br>
+            <li>API moderne et robuste (java.time)</li><br>
+            <li>Impossible de créer une date invalide (ex : 30 février)</li><br>
+            <li>🏟️ Ligue de rattachement</li><br>
+            <li>📅 Date d’arrivée</li><br>
+            <li>📅 Date de départ</li><br>
+        </ul>
+        
+    </section>
+
+
+    <section class="tech-choices">
+    <h2>🛠️ Choix techniques</h2>
+
+    <table class="tech-table">
+        <thead>
+            <tr>
+                <th>Choix</th>
+                <th>Justification</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><span class="badge">LocalDate</span></td>
+                <td>Fiabilité et simplicité dans la gestion des dates</td>
+            </tr>
+            <tr>
+                <td>Exceptions</td>
+                <td>Sécurité et robustesse de l’application</td>
+            </tr>
+            <tr>
+                <td>Objet & encapsulation</td>
+                <td>Code maintenable et évolutif</td>
+            </tr>
+            <tr>
+                <td>Console</td>
+                <td>Focus sur la logique métier</td>
+            </tr>
+            <tr>
+                <td>Règles métier strictes</td>
+                <td>Données cohérentes et fiables</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+
+    <section class="skills">
+    <h2>🚀 Compétences développées</h2>
+
+    <div class="skills-grid">
+        <div class="skill-card">
+            <span class="icon">☕</span>
+            <h3>Java orienté objet</h3>
+            <p>
+                Maîtrise des principes fondamentaux de la programmation orientée objet :
+                encapsulation, héritage, polymorphisme et responsabilité des classes.
+            </p>
+        </div>
+
+        <div class="skill-card">
+            <span class="icon">🧠</span>
+            <h3>Analyse & règles métier</h3>
+            <p>
+                Traduction des besoins fonctionnels en règles métier strictes
+                garantissant la cohérence et la fiabilité de l’application.
+            </p>
+        </div>
+
+        <div class="skill-card">
+            <span class="icon">🛡️</span>
+            <h3>Gestion des erreurs</h3>
+            <p>
+                Mise en place d’exceptions personnalisées et de contrôles
+                pour sécuriser les actions utilisateur et éviter les incohérences.
+            </p>
+        </div>
+
+        <div class="skill-card">
+            <span class="icon">📐</span>
+            <h3>Architecture logicielle</h3>
+            <p>
+                Structuration claire du code avec séparation des responsabilités
+                pour un projet maintenable et évolutif.
+            </p>
+        </div>
+
+        <div class="skill-card">
+            <span class="icon">🧪</span>
+            <h3>Validation des données</h3>
+            <p>
+                Vérification systématique des entrées utilisateurs
+                afin de garantir l’intégrité et la cohérence des données.
+            </p>
+        </div>
+
+        <div class="skill-card">
+            <span class="icon">📊</span>
+            <h3>Organisation de projet</h3>
+            <p>
+                Structuration d’un projet professionnel avec logique,
+                rigueur et respect des bonnes pratiques de développement.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+        <section class="galerie">
+            <h2>GALERIE</h2>
+            <div class="images">
+                <img src="./assets/arbrefinal.jpeg" alt="arbre heuristique final">
+                <img src="./assets/mcd.png" alt="mcd final">
+                <img src="./assets/arbre.jpeg" alt="arbre heuritique">
+                <img src="./assets/gestion_dates.png" alt="gestions des dates">
+            </div>
+        </section>
+
+    
+       
+
+<div class="conclusion">
+    <h2><span class="concluse">🏁Con</span>clusion</h2>
+    <p>Ce projet m’a permis de mettre en pratique des concepts fondamentaux du développement logiciel, tout en respectant des contraintes réalistes de gestion du personnel.</p><br>
+    <p>Il constitue une base solide pour une future évolution vers :</p>
+    <ul>
+      <li>une interface graphique</li>
+      <li>une base de données</li>
+      <li>une application web</li>
+    </ul>
+  </div>
+
+  <hr class="fin">
+
+ <footer>
+        <div class="foot">
+            <ul class="icon_lien">
+                <li><strong>Portfolio</strong></li>
+                <li class="lien"><i class="fa-brands fa-facebook-f"></i></li>
+                <li class="lien"><i class="fa-brands fa-linkedin"></i></li>
+                <li class="lien"><i class="fa-brands fa-instagram"></i></li>
+                <li class="lien"><i class="fa-brands fa-youtube"></i></li>
+            </ul>
+
+            <div class="som_end">
+                <ul>
+                    <li>Home</li>
+                    <li class="v2">Realization</li>
+                    <li class="v2">page</li>
+                </ul>
+                <ul>
+                    <li>About</li>
+                    <li class="v2">logo</li>
+                    <li class="v2">Page</li>
+                </ul>
+                <ul>
+                    <li>Contact</li>
+                    <li class="v2">services</li>
+                    <li class="v2">Page</li>
+                </ul>
+            </div>
+        </div>
+
+        <p>
+            &copy; - MIT - <time datetime="2025-01-10">2025</time>
+        </p>
+    </footer>
+
+
+</body>
+</html>
+

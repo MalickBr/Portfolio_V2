@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
+html {
+  font-size: 62.5%; /* 16 mult 62.5 = 1.0 */
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Open sans","times new roman" sans-serif;
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+
+
+h1,
+h2,
+h3{
+  font-size: 3rem;
+  margin: 0;
+  font-weight: normal;
+}
+
+p,
+figure,
+ul{
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+}
+
+img {
+  display: inline-block;
+  vertical-align: middle;
+}
