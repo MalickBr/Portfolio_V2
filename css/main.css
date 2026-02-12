@@ -100,7 +100,7 @@ section{
   margin-top: 10px;
 }
 
-/* Animation pour la rotation de bord sur la photo */
+/* Animation pour les ecrits sur le titre */
 .home-text h2 span{
   position: relative;
   display: inline-block;
