@@ -1,5 +1,9 @@
 @import url(./reset.css);
 
+html {
+  scroll-behavior: smooth;
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -278,6 +282,7 @@ section{
   background-color: var(--bg-color);
   margin-left: 17rem;
   margin-right: 17rem;
+  padding-top: 200px;
 }
 
  .resume-box p{

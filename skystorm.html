@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/main_skystorm.css">
+    <title>MALICK BRYAN PORTFOLIO</title>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">Skystorm.</a>
+
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+        <nav>
+            <ul lang="en">
+                <li><a href="index.html">Acceuil</a></li>
+                <li><a href="#">A propos</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Realisations</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="intro">
+        <h1>🖥️Presentation Projet php <span>Réseau social Skystorm</span></h1>
+        <h2>🧩 Contexte du projet</h2>
+        <p>Ce projet a été réalisé dans le cadre de ma formation BTS SIO, avec pour objectif de concevoir un réseau social inspiré de X (ancien Twitter) en utilisant les technologies PHP et Laravel.</p>
+    </section>
+
+    <section class="objectifs">
+        <h2 class="heading">🎯 Objectifs du projet</h2>
+
+        <div class="objectifs-container">
+            <div class="objectifs-box">
+                <i class="fa-solid fa-building-user"></i>
+
+                <h3>Creer des comptes utilisateurs</h3>
+                <p>L’un des objectifs basiques du projet est de créer des comptes utilisateurs qui pourront interagir sur le réseau social.
+                </p>
+            </div>
+
+
+            <div class="objectifs-box">
+                <i class="fa-solid fa-scale-balanced"></i>
+
+                <h3>Publication et gestion de posts</h3>
+                <p>Etant un réseau social, un des objectifs principaux du projet est de permettre aux utilisateurs de publier des messages et de les gerer (supprimer, modifier).</p>
+            </div>
+
+
+            <div class="objectifs-box">
+                <i class="fa-solid fa-database"></i>
+
+                <h3>Administration</h3>
+                <p>Creer un administrateur avec des droits étendus pour modérer les contenus et gérer les comptes utilisateurs.</p>
+            </div>
+
+            
+        </div>
+    </section>
+
+    <section class="architecture">
+        <div class="archi">
+        <h2 class="heading">🏗️ Architecture générale</h2>
+        <p>📁 Niveaux d'utilisateurs :</p>
+        <ul>
+            <li><span>Visiteur</span> : Un visiteur non authentifié peut consulter les publications publiques mais ne dispose d’aucun droit
+d’écriture. </li><br>
+            <li><span>utilisateur authentifié</span> : Un utilisateur authentifié peut publier des messages, modifier ou supprimer ses propres publications et
+employés de sa propre ligue avec une application bureau. </li><br>
+            <li><span>Administrateur</span> : Un administrateur dispose de droits étendus lui permettant de modérer les contenus (suppression de
+publications inappropriées) et de gérer les comptes utilisateurs si nécessaire. </li><br>
+        </ul>
+        </div>
+
+        <div class="employes">
+        <h2 class="heading">👤 Utilisateurs</h2>
+        <p>Chaque utilisateur à l'inscription doit fournir :</p>
+
+        <ul>
+            <li>🧑Nom et prénom     </li><br>
+            <li>📧Adresse mail</li><br>
+            <li>🔐 Mot de passe</li><br>
+        </ul>
+        </div>
+        
+    </section>
+
+
+    <section class="tech-choices">
+    <h2>🛠️ Choix techniques</h2>
+
+    <table class="tech-table">
+        <thead>
+            <tr>
+                <th>Choix</th>
+                <th>Justification</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Framework</span></td>
+                <td>Développement de l’application avec le framework Laravel 12 (architecture MVC)</td>
+            </tr>
+            <tr>
+                <td>Acces</td>
+                <td>Mise en place d’un système d’authentification sécurisé (gestion des sessions et contrôle d’accès)</td>
+            </tr>
+            <tr>
+                <td>Données</td>
+                <td>Modélisation et création de la base de données relationnelle sous MySQL</td>
+            </tr>
+            <tr>
+                <td>Console</td>
+                <td>Développement des contrôleurs, routes et vues Blade</td>
+            </tr>
+            <tr>
+                <td>Règles métier strictes</td>
+                <td>Implémentation des opérations CRUD pour les publications</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+
+    <section class="skills">
+    <h2>🚀 Compétences développées</h2>
+
+    <div class="skills-grid">
+        <div class="skill-card">
+            <span class="icon">☕</span>
+            <h3>Java orienté objet</h3>
+            <p>
+                Maîtrise des principes fondamentaux de la programmation orientée objet :
+                encapsulation, héritage, polymorphisme et responsabilité des classes.
+            </p>
+        </div>
+
+        <div class="skill-card">
+            <span class="icon">🧠</span>
+            <h3>Analyse & règles métier</h3>
+            <p>
+                Traduction des besoins fonctionnels en règles métier strictes
+                garantissant la cohérence et la fiabilité de l’application.
+            </p>
+        </div>
+
+        <div class="skill-card">
+            <span class="icon">🛡️</span>
+            <h3>Gestion des erreurs</h3>
+            <p>
+                Mise en place d’exceptions personnalisées et de contrôles
+                pour sécuriser les actions utilisateur et éviter les incohérences.
+            </p>
+        </div>
+
+        <div class="skill-card">
+            <span class="icon">📐</span>
+            <h3>Architecture logicielle</h3>
+            <p>
+                Structuration claire du code avec séparation des responsabilités
+                pour un projet maintenable et évolutif.
+            </p>
+        </div>
+
+        <div class="skill-card">
+            <span class="icon">🧪</span>
+            <h3>Validation des données</h3>
+            <p>
+                Vérification systématique des entrées utilisateurs
+                afin de garantir l’intégrité et la cohérence des données.
+            </p>
+        </div>
+
+        <div class="skill-card">
+            <span class="icon">📊</span>
+            <h3>Organisation de projet</h3>
+            <p>
+                Structuration d’un projet professionnel avec logique,
+                rigueur et respect des bonnes pratiques de développement.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+        <section class="galerie">
+            <h2>GALERIE</h2>
+            <div class="images">
+                <div class="img-cap">
+                     <img src="./assets/skystorm.png" style="height:300px; width: auto;" alt="arbre heuristique final">
+                     <div class="cap">Logo</div>
+                </div>
+               
+
+                <div class="img-cap">
+                     <img src="./assets/register.png" alt="écran d'inscription">
+                     <div class="cap">Écran d'inscription</div>
+                </div>
+
+                <div class="img-cap">
+                     <img src="./assets/login.png" alt="écran de connexion">
+                     <div class="cap">Écran de connexion</div>
+                </div>
+
+                <div class="img-cap">
+                     <img src="./assets/posts.png" alt="posts">
+                     <div class="cap">Creation de posts</div>
+                </div>
+
+                <div class="img-cap">
+                     <img src="./assets/MCD_sky.png" alt="MCD">
+                     <div class="cap">Modèle Conceptuel de Données</div>
+                </div>
+                
+            </div>
+        </section>
+
+    
+       
+
+<div class="conclusion">
+    <h2><span class="concluse">🏁Con</span>clusion</h2>
+    <p>Ce projet m’a permis de mettre en pratique des concepts fondamentaux du développement logiciel, tout en respectant des contraintes réalistes de gestion du personnel.</p><br>
+    <p>Il constitue une base solide pour une future évolution vers :</p>
+    <ul>
+      <li>une interface graphique</li>
+      <li>une base de données</li>
+      <li>une application web</li>
+    </ul>
+  </div>
+
+  <hr class="fin">
+
+ <footer>
+        <div class="foot">
+            <ul class="icon_lien">
+                <li><strong>Portfolio</strong></li>
+                <li class="lien"><i class="fa-brands fa-facebook-f"></i></li>
+                <li class="lien"><i class="fa-brands fa-linkedin"></i></li>
+                <li class="lien"><i class="fa-brands fa-instagram"></i></li>
+                <li class="lien"><i class="fa-brands fa-youtube"></i></li>
+            </ul>
+
+            <div class="som_end">
+                <ul>
+                    <li>Home</li>
+                    <li class="v2">Realization</li>
+                    <li class="v2">page</li>
+                </ul>
+                <ul>
+                    <li>About</li>
+                    <li class="v2">logo</li>
+                    <li class="v2">Page</li>
+                </ul>
+                <ul>
+                    <li>Contact</li>
+                    <li class="v2">services</li>
+                    <li class="v2">Page</li>
+                </ul>
+            </div>
+        </div>
+
+        <p>
+            &copy; - MIT - <time datetime="2025-01-10">2025</time>
+        </p>
+    </footer>
+
+
+</body>
+</html>
+

@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const arrowLeft = document.querySelector('.projets-box .navigation .arrow-left');
 
     let index = 0;
-    const totalProjets = 3;
+    const totalProjets = 4;
 
     const activeProjets = () => {
 
@@ -108,5 +108,4 @@ resumeBtns.forEach((btn, idx) => {
         resumeDetails[idx].classList.add('active');
     });
 });
-
 
