@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const arrowLeft = document.querySelector('.projets-box .navigation .arrow-left');
 
     let index = 0;
-    const totalProjets = 4;
+    const totalProjets = 6;
 
     const activeProjets = () => {
 
